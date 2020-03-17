@@ -17,10 +17,11 @@ if (process.env.NODE_ENV !== 'production'){
 
 
 let mainWindow;
-let newProductWindow;
 
 app.on('ready', function(){
     mainWindow = new BrowserWindow({
+        width: 1600,
+        height: 900,
         webPreferences: {
             nodeIntegration: true
         }
